@@ -79,22 +79,23 @@ Not affiliated with YouTube, Google, or Alphabet.
 
 ### Icône (128 × 128 PNG)
 
-Le SVG source est dans `icon.svg`. Pour générer le PNG :
-
-```sh
-# Avec rsvg-convert (Homebrew : brew install librsvg)
-rsvg-convert -w 128 -h 128 store/icon.svg -o store/icon-128.png
-
-# Ou avec ImageMagick
-magick -background none store/icon.svg -resize 128x128 store/icon-128.png
-
-# Ou en ligne : svg2png.com, cloudconvert.com
-```
+PNG déjà générée : `icon-128.png`. Source vectorielle : `icon.svg`.
+Tailles plus petites disponibles aussi (`icon-16.png`, `-32`, `-48`, `-96`)
+— elles sont déjà copiées dans `../public/icon/` pour l'extension elle-même.
 
 L'icône représente une bulle de commentaire blanche avec un play-triangle
 rouge à l'intérieur, sur fond gris foncé arrondi. Évite tout élément qui
 ressemble trop au logo officiel YouTube/YT Music pour ne pas se faire
 flagger trademark à la review.
+
+Pour régénérer tout après modification de `icon.svg` ou des HTML :
+
+```sh
+./store/regenerate.sh
+```
+
+Le script utilise Chrome en mode headless — pas de dépendances tierces à
+installer.
 
 ### Captures d'écran produit (1280 × 800, jusqu'à 5)
 
@@ -128,21 +129,11 @@ clean ou floute si nécessaire.
 
 ### Petite image promo (440 × 280)
 
-Ouvre `promo-small.html` dans Chrome, redimensionne la fenêtre à exactement
-**440 × 280**, puis fais une capture d'écran de la fenêtre (Cmd+Shift+5 sur
-macOS → "Capture window").
-
-Pour redimensionner pile poil :
-
-```sh
-# Dans la console DevTools de la page :
-window.resizeTo(440 + (window.outerWidth - window.innerWidth),
-                280 + (window.outerHeight - window.innerHeight));
-```
+PNG déjà générée : `promo-small.png`. Source : `promo-small.html`.
 
 ### Grande image promo (1400 × 560)
 
-Pareil avec `promo-marquee.html`, dimension **1400 × 560**.
+PNG déjà générée : `promo-marquee.png`. Source : `promo-marquee.html`.
 
 ---
 
