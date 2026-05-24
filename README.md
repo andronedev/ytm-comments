@@ -1,3 +1,5 @@
+<img width="1077" height="246" alt="image" src="https://github.com/user-attachments/assets/aa1a7ad9-8b9f-436c-98d2-b18c98ca8044" />
+
 # ytm-comments
 
 A Chrome extension that puts the YouTube comments back on YouTube Music
