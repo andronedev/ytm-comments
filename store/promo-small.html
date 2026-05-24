@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>YT Music Comments — Small promo (440×280)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 440px;
+    height: 280px;
+    background: #0f0f0f;
+    color: #fff;
+    font-family: 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 440px;
+    height: 280px;
+    padding: 28px 32px;
+    background:
+      radial-gradient(circle at 92% 12%, rgba(255, 0, 51, 0.18), transparent 55%),
+      linear-gradient(135deg, #0f0f0f 0%, #1c1c1c 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #181818;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon svg { width: 28px; height: 28px; }
+  .brand {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 0.02em;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 8px 0 6px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 360px;
+  }
+  .accent { color: #ff3355; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon-wrap">
+      <span class="icon">
+        <svg viewBox="0 0 24 24" fill="#fff">
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+        </svg>
+      </span>
+      <span class="brand">YT Music Comments</span>
+    </div>
+    <div>
+      <h1>YouTube comments,<br>back in <span class="accent">YT Music</span> desktop.</h1>
+      <p>The drawer mobile users got in 2023 — natively docked in your player bar.</p>
+    </div>
+  </div>
+</body>
+</html>

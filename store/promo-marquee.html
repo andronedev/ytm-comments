@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>YT Music Comments — Marquee promo (1400×560)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1400px;
+    height: 560px;
+    background: #0f0f0f;
+    color: #fff;
+    font-family: 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+    overflow: hidden;
+  }
+  .stage {
+    width: 1400px;
+    height: 560px;
+    background:
+      radial-gradient(circle at 85% 25%, rgba(255, 0, 51, 0.18), transparent 50%),
+      radial-gradient(circle at 15% 80%, rgba(0, 100, 255, 0.06), transparent 50%),
+      linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding: 64px 80px;
+    position: relative;
+  }
+
+  .left { display: flex; flex-direction: column; gap: 28px; }
+  .brand-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    background: #181818;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon svg { width: 40px; height: 40px; }
+  .brand {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.72);
+    letter-spacing: 0.01em;
+  }
+  h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+  .accent { color: #ff3355; }
+  p {
+    font-size: 22px;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 540px;
+  }
+  .tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  .tag {
+    font-size: 13px;
+    padding: 6px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  /* Right side: mock player bar with the injected button */
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .player-mock {
+    width: 100%;
+    background: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .cover {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4a1c2f, #1c1a2a 60%, #2a1c1a);
+    flex-shrink: 0;
+  }
+  .meta { flex: 1; min-width: 0; }
+  .title { font-size: 17px; font-weight: 600; }
+  .artist { font-size: 13px; color: rgba(255, 255, 255, 0.55); margin-top: 2px; }
+  .controls { display: flex; align-items: center; gap: 10px; }
+  .ctrl {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .ctrl svg { width: 22px; height: 22px; fill: currentColor; }
+  .ctrl.highlight {
+    background: rgba(255, 51, 85, 0.16);
+    color: #fff;
+    box-shadow: 0 0 0 2px rgba(255, 51, 85, 0.45);
+    position: relative;
+  }
+  .ctrl.highlight::after {
+    content: '';
+    position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%);
+    width: 4px; height: 4px; border-radius: 50%; background: #fff;
+  }
+  .pointer {
+    position: absolute;
+    right: 220px; top: -28px;
+    color: #ff3355;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .pointer::after {
+    content: '';
+    display: block;
+    width: 1px; height: 30px;
+    background: #ff3355;
+    margin: 6px auto 0;
+  }
+  .player-wrap { position: relative; width: 100%; }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="left">
+      <div class="brand-row">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="#fff">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+          </svg>
+        </span>
+        <span class="brand">YT Music Comments</span>
+      </div>
+      <h1>The comments<br>YT Music desktop<br><span class="accent">forgot to ship.</span></h1>
+      <p>Mobile got them in 2023. Desktop didn't. This extension drops a
+        native-looking button into your player bar and slides up the
+        full thread of the track you're listening to.</p>
+      <div class="tags">
+        <span class="tag">Read-only</span>
+        <span class="tag">No API key</span>
+        <span class="tag">No tracking</span>
+        <span class="tag">Open source · MIT</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="player-wrap">
+        <span class="pointer">← new</span>
+        <div class="player-mock">
+          <div class="cover"></div>
+          <div class="meta">
+            <div class="title">Track playing right now</div>
+            <div class="artist">Artist · Album · 2024</div>
+          </div>
+          <div class="controls">
+            <span class="ctrl" title="Dislike">
+              <svg viewBox="0 0 24 24"><path d="m11.31 2 .39.01a10 10 0 0 1 5.57 1.58l.27.16a2 2 0 0 0 1 .25H20.5a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-1.79a1 1 0 0 0-.88.65l-3 8.54a1 1 0 0 1-1.1.66l-1.05-.18a4 4 0 0 1-3.25-4.78L10 15H5.94A3.66 3.66 0 0 1 2.36 12.13 3.68 3.68 0 0 1 3 9.15l-.02-.08A3.82 3.82 0 0 1 4 5.5l.01-.27a2.86 2.86 0 0 1 .14-.66l.1-.28A3.75 3.75 0 0 1 7.7 2h3.6Z"/></svg>
+            </span>
+            <span class="ctrl" title="Like">
+              <svg viewBox="0 0 24 24"><path d="M9.22 1.8a1 1 0 0 1 1.11-.66l1.04.17a4 4 0 0 1 3.25 4.78L14 9h4.06a3.66 3.66 0 0 1 3.58 2.87A3.68 3.68 0 0 1 21 14.85l.02.09A3.82 3.82 0 0 1 20 18.5l-.01.27a2.82 2.82 0 0 1-.14.66l-.1.28A3.75 3.75 0 0 1 16.3 22h-3.6l-.4-.01a12 12 0 0 1-5.22-1.39l-.34-.19-.27-.15a2 2 0 0 0-.99-.27H3.5A1.5 1.5 0 0 1 2 18.5v-6A1.5 1.5 0 0 1 3.5 11h1.79l.16-.01a1 1 0 0 0 .72-.51l.06-.15Z"/></svg>
+            </span>
+            <span class="ctrl highlight" title="Comments">
+              <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/></svg>
+            </span>
+            <span class="ctrl" title="Menu">
+              <svg viewBox="0 0 24 24"><path d="M12 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
