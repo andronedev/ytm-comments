@@ -137,6 +137,94 @@ PNG déjà générée : `promo-marquee.png`. Source : `promo-marquee.html`.
 
 ---
 
+---
+
+## Onglet Confidentialité
+
+Tous les champs à remplir dans l'onglet *Confidentialité* du dashboard.
+
+### Objectif unique (≤ 1000 caractères)
+
+```
+Display the YouTube comments of the currently playing track inside the
+YouTube Music desktop website (music.youtube.com), via a comments button
+injected into the player bar that opens a slide-up drawer.
+```
+
+### Justification de l'autorisation `storage` (≤ 1000 caractères)
+
+```
+The "storage" permission is used exclusively to cache YouTube's public
+client configuration (INNERTUBE_CONTEXT — a small JSON object holding the
+WEB client name, version, locale, and country code) in
+chrome.storage.session. This cache lasts up to 6 hours and avoids
+re-fetching the same configuration on every comments request. The session
+storage is cleared automatically when the browser closes. No user data,
+no personal information, no preferences, no analytics, and no track
+history are ever stored.
+```
+
+### Justification de l'autorisation d'accès à l'hôte (≤ 1000 caractères)
+
+```
+Two host permissions are declared, both strictly necessary:
+
+1. https://music.youtube.com/* — required to inject the content script
+   that adds the comments button to the player bar. This is the page the
+   extension enhances; without it the extension cannot function.
+
+2. https://www.youtube.com/* — required to fetch the comments for the
+   currently playing track. The extension POSTs to
+   https://www.youtube.com/youtubei/v1/next, the exact same endpoint the
+   official YouTube web client calls when a user opens a video. The
+   extension issues the same kind of request a YouTube tab would make.
+   Only this single endpoint under youtube.com is contacted; no other
+   paths and no other domains are accessed.
+```
+
+### Code distant ?
+
+> **Non, je n'utilise pas "Code distant"**
+
+L'extension ne fait référence à aucun fichier JS/WASM externe, n'utilise
+pas `eval()`, et ne charge aucun script depuis un domaine tiers. Tout le
+code est bundlé au build par WXT/Vite et inclus dans le `.zip` uploadé.
+(Le fait de fetch du HTML depuis www.youtube.com pour extraire une chaîne
+JSON via regex n'est pas du code distant — c'est de la donnée.)
+
+### Consommation des données
+
+**Ne coche AUCUNE des 9 catégories.** L'extension ne collecte rien :
+ni PII, ni info santé, ni info financière, ni info d'authentification,
+ni communications personnelles, ni localisation, ni historique web, ni
+activité utilisateur, ni contenu de site.
+
+> Justification rapide si demandée : la seule donnée stockée est la
+> config publique d'INNERTUBE_CONTEXT (variables techniques YouTube,
+> pas des données utilisateur). Le video ID est lu depuis l'URL et
+> transmis uniquement à youtube.com (qui le connaît déjà puisque c'est
+> son contenu).
+
+### Certifications (les 3 cases à cocher)
+
+> ☑ Je ne vends ni ne transfère les données des utilisateurs à des tiers
+> ☑ Je n'utilise ni ne transfère les données des utilisateurs à des fins sans rapport avec la fonctionnalité de base
+> ☑ Je n'utilise ni ne transfère les données des utilisateurs pour déterminer leur solvabilité ou à des fins de prêt
+
+(Aucune donnée utilisateur n'est collectée → les trois sont triviales à
+cocher.)
+
+### URL des règles de confidentialité
+
+```
+https://github.com/andronedev/ytm-comments/blob/main/PRIVACY.md
+```
+
+Le fichier `PRIVACY.md` est versionné à la racine du repo. Toute mise à
+jour est visible dans l'historique git.
+
+---
+
 ## Workflow de soumission
 
 1. Build prod du dernier release : `pnpm wxt zip -b chrome` (déjà fait dans
