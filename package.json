@@ -1,0 +1,32 @@
+{
+  "name": "ytm-comments",
+  "description": "Read YouTube comments inline on music.youtube.com",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "andronedev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andronedev/ytm-comments"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "vue-tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "vue": "^3.5.29"
+  },
+  "devDependencies": {
+    "@wxt-dev/module-vue": "^1.0.3",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.2.5",
+    "wxt": "^0.20.26"
+  }
+}
