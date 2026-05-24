@@ -11,6 +11,12 @@ track playing right now.
 Read-only: you can browse, sort Top / Newest, and expand replies. You can't
 post or like — that would need real auth and isn't what this is for.
 
+**Heads up — current limitation:** the button only shows comments when the
+track has a real YouTube video counterpart (i.e. music videos). For
+album-style audio uploads (the "Song" entries, with no public YouTube video),
+the drawer is empty for now. Comments do exist on those server-side — they
+just sit on a different endpoint. Support is coming.
+
 ## Install
 
 Not on any web store yet. Grab a prebuilt zip from
@@ -73,8 +79,9 @@ paths a few times a year, so every hop is `?.` chained.
 - The hard-coded `clientVersion` gets rejected. `clientContext.ts` falls back
   to scraping the live value from `https://www.youtube.com/` and caches it
   in session storage.
-- Some tracks have comments off or no public YouTube counterpart — the
-  drawer just says so.
+- Some tracks have comments off or are pure-audio uploads with no public
+  YouTube video — the drawer is empty in that case. See the heads-up at the
+  top.
 - Signed out: read still works, just no personalised like state on each
   comment.
 
