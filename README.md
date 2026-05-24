@@ -13,20 +13,36 @@ post or like — that would need real auth and isn't what this is for.
 
 ## Install
 
+Not on any web store yet. Grab a prebuilt zip from
+[Releases](https://github.com/andronedev/ytm-comments/releases) (stable) or
+from the latest [CI run](https://github.com/andronedev/ytm-comments/actions)
+(bleeding edge, can break), or build it yourself.
+
+**Chrome / Edge** — unzip, open `chrome://extensions` (or `edge://extensions`),
+enable developer mode, click *Load unpacked*, point at the unzipped folder.
+
+**Firefox** — open `about:debugging#/runtime/this-firefox`, click *Load
+Temporary Add-on*, pick the `.zip` directly. Note: removed when Firefox
+restarts. A permanent install requires a Mozilla-signed build, which this
+project doesn't have.
+
+CI artifacts come wrapped in an extra GitHub zip, so you have to extract once
+to get the real `ytm-comments-<version>-<browser>.zip`, then extract that.
+
+Then open any track on music.youtube.com and click the new icon.
+
+### Build it yourself
+
 Node 18+ and pnpm.
 
 ```sh
 git clone https://github.com/andronedev/ytm-comments.git
 cd ytm-comments
 pnpm install
-pnpm dev
+pnpm dev                   # fresh Chrome profile + HMR
+pnpm build                 # .output/chrome-mv3/, load unpacked
+pnpm build:firefox         # .output/firefox-mv2/
 ```
-
-`pnpm dev` opens a fresh Chrome profile with the extension and HMR. If you'd
-rather load it in your own Chrome, `pnpm build` and load
-`.output/chrome-mv3/` from `chrome://extensions`.
-
-Open any track on music.youtube.com, click the new icon.
 
 ## How comments are fetched
 
