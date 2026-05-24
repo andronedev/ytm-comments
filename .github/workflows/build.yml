@@ -58,6 +58,7 @@ jobs:
           path: .output/*-${{ matrix.browser }}.zip
           if-no-files-found: error
           retention-days: 14
+          include-hidden-files: true
 
       - name: Upload Firefox sources
         if: matrix.browser == 'firefox'
@@ -67,3 +68,4 @@ jobs:
           path: .output/*-sources.zip
           if-no-files-found: error
           retention-days: 14
+          include-hidden-files: true
