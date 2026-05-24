@@ -21,10 +21,17 @@ just sit on a different endpoint. Support is coming.
 
 ## Install
 
-Not on any web store yet. Grab a prebuilt zip from
-[Releases](https://github.com/andronedev/ytm-comments/releases) (stable) or
-from the latest [CI run](https://github.com/andronedev/ytm-comments/actions)
-(bleeding edge, can break), or build it yourself.
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/jcjahljiapbacoiggfpfjglhofiafmai)
+
+One click via the Chrome Web Store. Auto-updates, signed by Google. Works
+on Chrome, Brave, Vivaldi, Arc, and any other Chromium-based browser that
+talks to the CWS.
+
+### Manual install (Edge, Firefox, or skip the store)
+
+Prebuilt zips: [Releases](https://github.com/andronedev/ytm-comments/releases)
+(stable) or the latest [CI run](https://github.com/andronedev/ytm-comments/actions)
+(bleeding edge, can break).
 
 **Chrome / Edge** — unzip, open `chrome://extensions` (or `edge://extensions`),
 enable developer mode, click *Load unpacked*, point at the unzipped folder.
