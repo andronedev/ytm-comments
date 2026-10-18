@@ -10,44 +10,58 @@ the visual assets.
 ### Titre (produit)
 > YT Music Comments
 
-### Résumé (issu du package — déjà rempli)
-> Read YouTube comments inline on music.youtube.com
+### Résumé (issu du package — localisé via `_locales`, 19 langues)
+> Read YouTube comments of the playing track, right from the YouTube Music player bar.
 
-### Description (jusqu'à 16 000 caractères — ~1300 ici)
+### Description (jusqu'à 16 000 caractères)
 
 ```
-YouTube Music on desktop doesn't show comments, even though the mobile app
-has had them since 2023. This extension fixes that.
+Read the YouTube comments of whatever is playing, without leaving what
+you're doing on YouTube Music.
 
-A speech-bubble icon appears in the player bar, next to the like button.
-Click it to open a drawer with the comments of whatever track is playing.
+A speech-bubble button appears in the YouTube Music player bar. Click it and
+a drawer slides up with the comments of the current track — on the player
+page, or on any other page while the music keeps playing.
 
-What works
-- Browse top-level comments and replies
-- Sort by Top or Newest
-- Like counts, pinned posts, and creator-hearted badges
-- Auto-refreshes when you skip to a new track
+Features
+- Top and Newest sorting, infinite scroll, threaded replies
+- Pinned comments, creator hearts, creator / verified / artist badges
+- Clickable timestamps that jump to that moment of the track, clickable links
+- Long comments collapsed with "Read more"
+- Resizable drawer (its height is remembered), Esc to close
+- Works with songs and music videos, and with both YouTube Music player bars
+- Interface in 19 languages; comment dates follow your YouTube Music language
+- Loads nothing until you open the drawer
 
-What's intentionally not included
-- Posting comments, replying, or liking — the extension is read-only by design
-- Comments for pure-audio album tracks that have no public YouTube video
-  counterpart (yet — coming soon)
+Read-only by design: no posting, replying or liking.
 
 How it works
-The extension calls the same YouTube endpoint your browser already uses when
-you watch a video. No API key, no OAuth, no third-party servers. Your
-existing YouTube session is reused as-is — meaning your locale and
-personalised like state come through unchanged.
+The extension calls the same public YouTube endpoint the YouTube website uses
+to display comments. Requests are anonymous: no API key, no OAuth, no
+cookies, no third-party servers.
 
 Privacy
-The extension does not collect, transmit, or store any of your data. It only
-talks to youtube.com directly, with the cookies your browser already sends
-to YouTube anyway. No analytics, no tracking, no remote configuration.
+The extension does not collect, transmit or store any of your data. No
+analytics, no tracking, no remote configuration. The only thing it stores is
+the drawer height you chose.
 
-Open source (MIT). Source code, releases, and issue tracker:
+Open source (MIT). Source code, releases and issue tracker:
 https://github.com/andronedev/ytm-comments
 
-Not affiliated with YouTube, Google, or Alphabet.
+Not affiliated with YouTube, Google or Alphabet.
+```
+
+### Notes de version 0.2.0 (pour le champ « Nouveautés » si demandé)
+
+```
+- Fixed: the button no longer appeared with YouTube Music's new player bar
+- Comments now available from any page while music plays, not only the player page
+- Fixed pinned comments and creator hearts not being shown
+- New: clickable timestamps and links, Read more, creator/verified/artist badges,
+  total comment count, resizable drawer, Esc to close, retry on errors
+- Interface translated into 19 languages
+- Requests are now anonymous (no cookies) and the youtube.com host permission is gone
+- New icon
 ```
 
 ### Catégorie
@@ -79,14 +93,15 @@ Not affiliated with YouTube, Google, or Alphabet.
 
 ### Icône (128 × 128 PNG)
 
-PNG déjà générée : `icon-128.png`. Source vectorielle : `icon.svg`.
+PNG déjà générée : `icon-128.png`. Source vectorielle : `icon.svg`
+(v0.2.0 : bulle blanche + barres d'égaliseur sur dégradé corail → violet).
 Tailles plus petites disponibles aussi (`icon-16.png`, `-32`, `-48`, `-96`)
 — elles sont déjà copiées dans `../public/icon/` pour l'extension elle-même.
 
-L'icône représente une bulle de commentaire blanche avec un play-triangle
-rouge à l'intérieur, sur fond gris foncé arrondi. Évite tout élément qui
-ressemble trop au logo officiel YouTube/YT Music pour ne pas se faire
-flagger trademark à la review.
+L'icône représente une bulle de commentaire blanche contenant des barres
+d'égaliseur, sur un carré arrondi en dégradé corail → violet. Volontairement
+loin du logo YouTube / YT Music (pas de triangle play, pas de rouge pur) pour
+ne pas se faire flagger trademark à la review.
 
 Pour régénérer tout après modification de `icon.svg` ou des HTML :
 
@@ -98,6 +113,9 @@ Le script utilise Chrome en mode headless — pas de dépendances tierces à
 installer.
 
 ### Captures d'écran produit (1280 × 800, jusqu'à 5)
+
+Déjà générées (v0.2.0, nouvelle barre de lecture) : `screenshot-1.png`
+(tiroir ouvert) et `screenshot-2.png` (réponses dépliées).
 
 Le store accepte 1280×800 OU 640×400. Vise **1280×800** (plus net).
 
@@ -154,32 +172,21 @@ injected into the player bar that opens a slide-up drawer.
 ### Justification de l'autorisation `storage` (≤ 1000 caractères)
 
 ```
-The "storage" permission is used exclusively to cache YouTube's public
-client configuration (INNERTUBE_CONTEXT — a small JSON object holding the
-WEB client name, version, locale, and country code) in
-chrome.storage.session. This cache lasts up to 6 hours and avoids
-re-fetching the same configuration on every comments request. The session
-storage is cleared automatically when the browser closes. No user data,
-no personal information, no preferences, no analytics, and no track
-history are ever stored.
+The "storage" permission is used exclusively to remember one UI preference:
+the height the user resized the comments drawer to, saved in
+chrome.storage.local so the drawer reopens at the same size. No user data,
+no personal information, no browsing history, no analytics are ever stored.
 ```
 
 ### Justification de l'autorisation d'accès à l'hôte (≤ 1000 caractères)
 
 ```
-Two host permissions are declared, both strictly necessary:
-
-1. https://music.youtube.com/* — required to inject the content script
-   that adds the comments button to the player bar. This is the page the
-   extension enhances; without it the extension cannot function.
-
-2. https://www.youtube.com/* — required to fetch the comments for the
-   currently playing track. The extension POSTs to
-   https://www.youtube.com/youtubei/v1/next, the exact same endpoint the
-   official YouTube web client calls when a user opens a video. The
-   extension issues the same kind of request a YouTube tab would make.
-   Only this single endpoint under youtube.com is contacted; no other
-   paths and no other domains are accessed.
+The only host access is the content script match https://music.youtube.com/*,
+required to add the comments button to the YouTube Music player bar and to
+show the comments drawer on that page. Without it the extension cannot
+function. Comments are fetched anonymously (no cookies) from YouTube's public
+youtubei/v1/next endpoint, the same one the YouTube website uses. Since
+v0.2.0 the extension no longer requests access to www.youtube.com.
 ```
 
 ### Code distant ?
@@ -200,10 +207,9 @@ ni communications personnelles, ni localisation, ni historique web, ni
 activité utilisateur, ni contenu de site.
 
 > Justification rapide si demandée : la seule donnée stockée est la
-> config publique d'INNERTUBE_CONTEXT (variables techniques YouTube,
-> pas des données utilisateur). Le video ID est lu depuis l'URL et
-> transmis uniquement à youtube.com (qui le connaît déjà puisque c'est
-> son contenu).
+> hauteur du tiroir (préférence d'interface). Le video ID est lu depuis la
+> page et transmis uniquement à YouTube (qui le connaît déjà puisque c'est
+> son contenu), sans cookies.
 
 ### Certifications (les 3 cases à cocher)
 

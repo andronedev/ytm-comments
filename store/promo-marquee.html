@@ -17,8 +17,8 @@
     width: 1400px;
     height: 560px;
     background:
-      radial-gradient(circle at 82% 22%, rgba(255, 0, 51, 0.18), transparent 50%),
-      radial-gradient(circle at 18% 82%, rgba(0, 100, 255, 0.05), transparent 50%),
+      radial-gradient(circle at 82% 22%, rgba(229, 40, 95, 0.22), transparent 50%),
+      radial-gradient(circle at 18% 82%, rgba(123, 47, 247, 0.12), transparent 50%),
       linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     display: grid;
     grid-template-columns: 1.05fr 1fr;
@@ -37,7 +37,6 @@
     width: 64px;
     height: 64px;
     border-radius: 14px;
-    background: #181818;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +55,7 @@
     line-height: 1.05;
     letter-spacing: -0.025em;
   }
-  .accent { color: #ff3355; }
+  .accent { color: #ff5a7a; }
   p {
     font-size: 19px;
     line-height: 1.45;
@@ -113,9 +112,9 @@
   }
   .ctrl svg { width: 22px; height: 22px; fill: currentColor; }
   .ctrl.highlight {
-    background: rgba(255, 51, 85, 0.15);
+    background: rgba(229, 40, 95, 0.15);
     color: #fff;
-    box-shadow: 0 0 0 2px rgba(255, 51, 85, 0.55);
+    box-shadow: 0 0 0 2px rgba(229, 40, 95, 0.55);
   }
   .ctrl.highlight::after {
     content: '';
@@ -129,7 +128,7 @@
     bottom: calc(100% + 12px);
     left: 50%;
     transform: translateX(-50%);
-    color: #ff3355;
+    color: #ff5a7a;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.14em;
@@ -145,7 +144,7 @@
     transform: translateX(-50%);
     width: 1px;
     height: 12px;
-    background: #ff3355;
+    background: #ff5a7a;
   }
 </style>
 </head>
@@ -153,21 +152,16 @@
   <div class="stage">
     <div class="left">
       <div class="brand-row">
-        <span class="icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" fill="#fff"/>
-            <path d="M9 7 L9 15 L17 11 Z" fill="#ff0033"/>
-          </svg>
-        </span>
+        <img class="icon" src="icon.svg" alt="">
         <span class="brand">YT Music Comments</span>
       </div>
-      <h1>The comments YT Music<br><span class="accent">forgot to ship.</span></h1>
-      <p>Mobile got them in 2023. Desktop didn't. This extension drops a
-        native-looking button into your player bar and slides up the
-        full thread of the track you're on.</p>
+      <h1>Every comment,<br><span class="accent">one click away.</span></h1>
+      <p>A native-looking button in your player bar slides up the full
+        thread of the track you're on — from any page, even while you
+        keep browsing.</p>
       <div class="tags">
-        <span class="tag">Read-only</span>
-        <span class="tag">No API key</span>
+        <span class="tag">Any page</span>
+        <span class="tag">19 languages</span>
         <span class="tag">No tracking</span>
         <span class="tag">MIT · Open source</span>
       </div>

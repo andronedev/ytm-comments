@@ -1,5 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="24" fill="#1f1f1f"/>
-  <path d="M104 28H24c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h8v20l24-20h48c6.6 0 12-5.4 12-12V40c0-6.6-5.4-12-12-12z" fill="#fff"/>
-  <path d="M50 44 L50 76 L80 60 Z" fill="#ff0033"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff5a5f"/>
+      <stop offset="0.5" stop-color="#e5285f"/>
+      <stop offset="1" stop-color="#7b2ff7"/>
+    </linearGradient>
+    <linearGradient id="bars" x1="36" y1="40" x2="92" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff4d5e"/>
+      <stop offset="1" stop-color="#8a2be2"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="40" cy="12" r="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#3a0030" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <rect width="128" height="128" rx="28" fill="url(#shine)"/>
+
+  <!-- speech bubble -->
+  <path filter="url(#shadow)" fill="#fff"
+        d="M42 24h44c11 0 20 9 20 20v24c0 11-9 20-20 20H60l-20 16c-2.6 2.1-6 .2-6-3V87.4C27 84.8 22 77.2 22 68V44c0-11 9-20 20-20z"/>
+
+  <!-- equalizer bars -->
+  <g fill="url(#bars)">
+    <rect x="38" y="49" width="9" height="14" rx="4.5"/>
+    <rect x="52" y="38" width="9" height="36" rx="4.5"/>
+    <rect x="66" y="43" width="9" height="26" rx="4.5"/>
+    <rect x="80" y="51" width="9" height="10" rx="4.5"/>
+  </g>
 </svg>
