@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "YouTube Music के प्लेयर बार से ही, चल रहे गाने पर YouTube की टिप्पणियाँ पढ़ें।"
+  },
+  "commentsButton": {
+    "message": "टिप्पणियाँ"
+  },
+  "drawerTitle": {
+    "message": "टिप्पणियाँ"
+  },
+  "close": {
+    "message": "बंद करें"
+  },
+  "resizeHint": {
+    "message": "आकार बदलने के लिए खींचें"
+  },
+  "sortLabel": {
+    "message": "टिप्पणियाँ क्रमबद्ध करें"
+  },
+  "sortTop": {
+    "message": "टॉप"
+  },
+  "sortNewest": {
+    "message": "सबसे नई"
+  },
+  "stateIdle": {
+    "message": "टिप्पणियाँ देखने के लिए कोई गाना चलाएँ।"
+  },
+  "stateDisabled": {
+    "message": "इस गाने के लिए टिप्पणियाँ बंद हैं या उपलब्ध नहीं हैं।"
+  },
+  "stateError": {
+    "message": "टिप्पणियाँ लोड नहीं हो सकीं।"
+  },
+  "retry": {
+    "message": "फिर से कोशिश करें"
+  },
+  "loading": {
+    "message": "लोड हो रहा है…"
+  },
+  "loadingMore": {
+    "message": "और लोड हो रहा है…"
+  },
+  "loadMoreError": {
+    "message": "और टिप्पणियाँ लोड नहीं हो सकीं।"
+  },
+  "noMore": {
+    "message": "कोई और टिप्पणी नहीं।"
+  },
+  "loadingReplies": {
+    "message": "जवाब लोड हो रहे हैं…"
+  },
+  "repliesError": {
+    "message": "जवाब लोड नहीं हो सके।"
+  },
+  "moreReplies": {
+    "message": "और जवाब दिखाएँ"
+  },
+  "hideReplies": {
+    "message": "जवाब छिपाएँ"
+  },
+  "replies_one": {
+    "message": "$COUNT$ जवाब",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ जवाब",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "और पढ़ें"
+  },
+  "showLess": {
+    "message": "कम दिखाएँ"
+  },
+  "likes": {
+    "message": "पसंद"
+  },
+  "heartedByCreator": {
+    "message": "क्रिएटर ने दिल दिया"
+  },
+  "verified": {
+    "message": "सत्यापित"
+  },
+  "officialArtist": {
+    "message": "आधिकारिक कलाकार चैनल"
+  },
+  "seekTo": {
+    "message": "$COUNT$ पर जाएँ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

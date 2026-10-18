@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Lisez les commentaires YouTube du titre en cours, directement depuis la barre de lecture de YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Commentaires"
+  },
+  "drawerTitle": {
+    "message": "Commentaires"
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "resizeHint": {
+    "message": "Glisser pour redimensionner"
+  },
+  "sortLabel": {
+    "message": "Trier les commentaires"
+  },
+  "sortTop": {
+    "message": "Populaires"
+  },
+  "sortNewest": {
+    "message": "Plus récents"
+  },
+  "stateIdle": {
+    "message": "Lancez un titre pour voir ses commentaires."
+  },
+  "stateDisabled": {
+    "message": "Les commentaires sont désactivés ou indisponibles pour ce titre."
+  },
+  "stateError": {
+    "message": "Impossible de charger les commentaires."
+  },
+  "retry": {
+    "message": "Réessayer"
+  },
+  "loading": {
+    "message": "Chargement…"
+  },
+  "loadingMore": {
+    "message": "Chargement…"
+  },
+  "loadMoreError": {
+    "message": "Impossible de charger plus de commentaires."
+  },
+  "noMore": {
+    "message": "Plus aucun commentaire."
+  },
+  "loadingReplies": {
+    "message": "Chargement des réponses…"
+  },
+  "repliesError": {
+    "message": "Impossible de charger les réponses."
+  },
+  "moreReplies": {
+    "message": "Afficher plus de réponses"
+  },
+  "hideReplies": {
+    "message": "Masquer les réponses"
+  },
+  "replies_one": {
+    "message": "$COUNT$ réponse",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ réponses",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Lire la suite"
+  },
+  "showLess": {
+    "message": "Moins"
+  },
+  "likes": {
+    "message": "J'aime"
+  },
+  "heartedByCreator": {
+    "message": "Le créateur a mis un cœur"
+  },
+  "verified": {
+    "message": "Validé"
+  },
+  "officialArtist": {
+    "message": "Chaîne d'artiste officielle"
+  },
+  "seekTo": {
+    "message": "Aller à $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

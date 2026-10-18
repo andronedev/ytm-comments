@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "再生中の曲の YouTube コメントを、YouTube Music のプレーヤーバーから直接読めます。"
+  },
+  "commentsButton": {
+    "message": "コメント"
+  },
+  "drawerTitle": {
+    "message": "コメント"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "resizeHint": {
+    "message": "ドラッグしてサイズを変更"
+  },
+  "sortLabel": {
+    "message": "コメントの並べ替え"
+  },
+  "sortTop": {
+    "message": "人気順"
+  },
+  "sortNewest": {
+    "message": "新しい順"
+  },
+  "stateIdle": {
+    "message": "曲を再生するとコメントが表示されます。"
+  },
+  "stateDisabled": {
+    "message": "この曲のコメントはオフになっているか、利用できません。"
+  },
+  "stateError": {
+    "message": "コメントを読み込めませんでした。"
+  },
+  "retry": {
+    "message": "再試行"
+  },
+  "loading": {
+    "message": "読み込み中…"
+  },
+  "loadingMore": {
+    "message": "さらに読み込み中…"
+  },
+  "loadMoreError": {
+    "message": "これ以上コメントを読み込めませんでした。"
+  },
+  "noMore": {
+    "message": "これ以上コメントはありません。"
+  },
+  "loadingReplies": {
+    "message": "返信を読み込み中…"
+  },
+  "repliesError": {
+    "message": "返信を読み込めませんでした。"
+  },
+  "moreReplies": {
+    "message": "他の返信を表示"
+  },
+  "hideReplies": {
+    "message": "返信を非表示"
+  },
+  "replies_one": {
+    "message": "$COUNT$ 件の返信",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ 件の返信",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "もっと見る"
+  },
+  "showLess": {
+    "message": "一部を表示"
+  },
+  "likes": {
+    "message": "高評価"
+  },
+  "heartedByCreator": {
+    "message": "クリエイターがハートを付けました"
+  },
+  "verified": {
+    "message": "確認済み"
+  },
+  "officialArtist": {
+    "message": "公式アーティスト チャンネル"
+  },
+  "seekTo": {
+    "message": "$COUNT$ に移動",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

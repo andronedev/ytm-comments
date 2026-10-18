@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Читайте коментарі YouTube до поточного треку просто з панелі плеєра YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Коментарі"
+  },
+  "drawerTitle": {
+    "message": "Коментарі"
+  },
+  "close": {
+    "message": "Закрити"
+  },
+  "resizeHint": {
+    "message": "Перетягніть, щоб змінити розмір"
+  },
+  "sortLabel": {
+    "message": "Сортування коментарів"
+  },
+  "sortTop": {
+    "message": "Популярні"
+  },
+  "sortNewest": {
+    "message": "Нові"
+  },
+  "stateIdle": {
+    "message": "Увімкніть трек, щоб побачити коментарі."
+  },
+  "stateDisabled": {
+    "message": "Коментарі до цього треку вимкнено або вони недоступні."
+  },
+  "stateError": {
+    "message": "Не вдалося завантажити коментарі."
+  },
+  "retry": {
+    "message": "Повторити"
+  },
+  "loading": {
+    "message": "Завантаження…"
+  },
+  "loadingMore": {
+    "message": "Завантаження…"
+  },
+  "loadMoreError": {
+    "message": "Не вдалося завантажити більше коментарів."
+  },
+  "noMore": {
+    "message": "Більше коментарів немає."
+  },
+  "loadingReplies": {
+    "message": "Завантаження відповідей…"
+  },
+  "repliesError": {
+    "message": "Не вдалося завантажити відповіді."
+  },
+  "moreReplies": {
+    "message": "Показати більше відповідей"
+  },
+  "hideReplies": {
+    "message": "Сховати відповіді"
+  },
+  "replies_one": {
+    "message": "Відповідей: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "Відповідей: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Читати далі"
+  },
+  "showLess": {
+    "message": "Згорнути"
+  },
+  "likes": {
+    "message": "Подобається"
+  },
+  "heartedByCreator": {
+    "message": "Автор поставив сердечко"
+  },
+  "verified": {
+    "message": "Підтверджено"
+  },
+  "officialArtist": {
+    "message": "Офіційний канал виконавця"
+  },
+  "seekTo": {
+    "message": "Перейти до $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Read YouTube comments of the playing track, right from the YouTube Music player bar."
+  },
+  "commentsButton": {
+    "message": "Comments"
+  },
+  "drawerTitle": {
+    "message": "Comments"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "resizeHint": {
+    "message": "Drag to resize"
+  },
+  "sortLabel": {
+    "message": "Sort comments"
+  },
+  "sortTop": {
+    "message": "Top"
+  },
+  "sortNewest": {
+    "message": "Newest"
+  },
+  "stateIdle": {
+    "message": "Play a track to see its comments."
+  },
+  "stateDisabled": {
+    "message": "Comments are turned off or unavailable for this track."
+  },
+  "stateError": {
+    "message": "Couldn't load comments."
+  },
+  "retry": {
+    "message": "Retry"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "loadingMore": {
+    "message": "Loading more…"
+  },
+  "loadMoreError": {
+    "message": "Couldn't load more comments."
+  },
+  "noMore": {
+    "message": "No more comments."
+  },
+  "loadingReplies": {
+    "message": "Loading replies…"
+  },
+  "repliesError": {
+    "message": "Couldn't load replies."
+  },
+  "moreReplies": {
+    "message": "Show more replies"
+  },
+  "hideReplies": {
+    "message": "Hide replies"
+  },
+  "replies_one": {
+    "message": "$COUNT$ reply",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ replies",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Read more"
+  },
+  "showLess": {
+    "message": "Show less"
+  },
+  "likes": {
+    "message": "Likes"
+  },
+  "heartedByCreator": {
+    "message": "Hearted by the creator"
+  },
+  "verified": {
+    "message": "Verified"
+  },
+  "officialArtist": {
+    "message": "Official artist channel"
+  },
+  "seekTo": {
+    "message": "Jump to $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

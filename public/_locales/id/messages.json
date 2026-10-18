@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Baca komentar YouTube untuk lagu yang sedang diputar, langsung dari bilah pemutar YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Komentar"
+  },
+  "drawerTitle": {
+    "message": "Komentar"
+  },
+  "close": {
+    "message": "Tutup"
+  },
+  "resizeHint": {
+    "message": "Seret untuk mengubah ukuran"
+  },
+  "sortLabel": {
+    "message": "Urutkan komentar"
+  },
+  "sortTop": {
+    "message": "Teratas"
+  },
+  "sortNewest": {
+    "message": "Terbaru"
+  },
+  "stateIdle": {
+    "message": "Putar lagu untuk melihat komentarnya."
+  },
+  "stateDisabled": {
+    "message": "Komentar dinonaktifkan atau tidak tersedia untuk lagu ini."
+  },
+  "stateError": {
+    "message": "Tidak dapat memuat komentar."
+  },
+  "retry": {
+    "message": "Coba lagi"
+  },
+  "loading": {
+    "message": "Memuat…"
+  },
+  "loadingMore": {
+    "message": "Memuat lainnya…"
+  },
+  "loadMoreError": {
+    "message": "Tidak dapat memuat komentar lainnya."
+  },
+  "noMore": {
+    "message": "Tidak ada komentar lagi."
+  },
+  "loadingReplies": {
+    "message": "Memuat balasan…"
+  },
+  "repliesError": {
+    "message": "Tidak dapat memuat balasan."
+  },
+  "moreReplies": {
+    "message": "Tampilkan balasan lainnya"
+  },
+  "hideReplies": {
+    "message": "Sembunyikan balasan"
+  },
+  "replies_one": {
+    "message": "$COUNT$ balasan",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ balasan",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Baca selengkapnya"
+  },
+  "showLess": {
+    "message": "Lebih sedikit"
+  },
+  "likes": {
+    "message": "Suka"
+  },
+  "heartedByCreator": {
+    "message": "Diberi hati oleh kreator"
+  },
+  "verified": {
+    "message": "Terverifikasi"
+  },
+  "officialArtist": {
+    "message": "Channel artis resmi"
+  },
+  "seekTo": {
+    "message": "Lompat ke $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Читайте комментарии YouTube к текущему треку прямо из панели плеера YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Комментарии"
+  },
+  "drawerTitle": {
+    "message": "Комментарии"
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "resizeHint": {
+    "message": "Перетащите, чтобы изменить размер"
+  },
+  "sortLabel": {
+    "message": "Сортировка комментариев"
+  },
+  "sortTop": {
+    "message": "Популярные"
+  },
+  "sortNewest": {
+    "message": "Новые"
+  },
+  "stateIdle": {
+    "message": "Включите трек, чтобы увидеть комментарии."
+  },
+  "stateDisabled": {
+    "message": "Комментарии к этому треку отключены или недоступны."
+  },
+  "stateError": {
+    "message": "Не удалось загрузить комментарии."
+  },
+  "retry": {
+    "message": "Повторить"
+  },
+  "loading": {
+    "message": "Загрузка…"
+  },
+  "loadingMore": {
+    "message": "Загрузка…"
+  },
+  "loadMoreError": {
+    "message": "Не удалось загрузить больше комментариев."
+  },
+  "noMore": {
+    "message": "Больше комментариев нет."
+  },
+  "loadingReplies": {
+    "message": "Загрузка ответов…"
+  },
+  "repliesError": {
+    "message": "Не удалось загрузить ответы."
+  },
+  "moreReplies": {
+    "message": "Показать больше ответов"
+  },
+  "hideReplies": {
+    "message": "Скрыть ответы"
+  },
+  "replies_one": {
+    "message": "Ответов: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "Ответов: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Читать дальше"
+  },
+  "showLess": {
+    "message": "Свернуть"
+  },
+  "likes": {
+    "message": "Нравится"
+  },
+  "heartedByCreator": {
+    "message": "Автор поставил сердечко"
+  },
+  "verified": {
+    "message": "Подтверждено"
+  },
+  "officialArtist": {
+    "message": "Официальный канал исполнителя"
+  },
+  "seekTo": {
+    "message": "Перейти к $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

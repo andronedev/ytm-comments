@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "اقرأ تعليقات YouTube على المقطع قيد التشغيل مباشرةً من شريط مشغّل YouTube Music."
+  },
+  "commentsButton": {
+    "message": "التعليقات"
+  },
+  "drawerTitle": {
+    "message": "التعليقات"
+  },
+  "close": {
+    "message": "إغلاق"
+  },
+  "resizeHint": {
+    "message": "اسحب لتغيير الحجم"
+  },
+  "sortLabel": {
+    "message": "ترتيب التعليقات"
+  },
+  "sortTop": {
+    "message": "الأعلى"
+  },
+  "sortNewest": {
+    "message": "الأحدث"
+  },
+  "stateIdle": {
+    "message": "شغّل مقطعًا لعرض تعليقاته."
+  },
+  "stateDisabled": {
+    "message": "التعليقات متوقفة أو غير متاحة لهذا المقطع."
+  },
+  "stateError": {
+    "message": "تعذّر تحميل التعليقات."
+  },
+  "retry": {
+    "message": "إعادة المحاولة"
+  },
+  "loading": {
+    "message": "جارٍ التحميل…"
+  },
+  "loadingMore": {
+    "message": "جارٍ تحميل المزيد…"
+  },
+  "loadMoreError": {
+    "message": "تعذّر تحميل مزيد من التعليقات."
+  },
+  "noMore": {
+    "message": "لا توجد تعليقات أخرى."
+  },
+  "loadingReplies": {
+    "message": "جارٍ تحميل الردود…"
+  },
+  "repliesError": {
+    "message": "تعذّر تحميل الردود."
+  },
+  "moreReplies": {
+    "message": "عرض المزيد من الردود"
+  },
+  "hideReplies": {
+    "message": "إخفاء الردود"
+  },
+  "replies_one": {
+    "message": "ردّ واحد ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ من الردود",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "قراءة المزيد"
+  },
+  "showLess": {
+    "message": "عرض أقل"
+  },
+  "likes": {
+    "message": "الإعجابات"
+  },
+  "heartedByCreator": {
+    "message": "أعجب صاحب القناة بالتعليق"
+  },
+  "verified": {
+    "message": "تم التحقق"
+  },
+  "officialArtist": {
+    "message": "قناة الفنان الرسمية"
+  },
+  "seekTo": {
+    "message": "الانتقال إلى $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

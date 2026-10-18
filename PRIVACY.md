@@ -5,36 +5,35 @@ This extension does not collect, store, or transmit any user data.
 ## What the extension does
 
 - Runs only on `https://music.youtube.com`.
-- When you play a track, the extension calls
-  `https://www.youtube.com/youtubei/v1/next` — the same endpoint the
-  official YouTube web client calls to load comments — to fetch the
-  comments of the currently playing video. Your existing YouTube
-  session cookies are sent by your browser exactly as they would be
-  when visiting youtube.com directly.
+- When you open the comments drawer, the extension calls YouTube's
+  `youtubei/v1/next` endpoint (on `music.youtube.com`, falling back to
+  `www.youtube.com`) — the same endpoint the official YouTube web client
+  calls to load comments — to fetch the public comments of the track
+  currently playing.
+- These requests are sent **without cookies** (`credentials: 'omit'`):
+  your YouTube account is never involved, and the requests are anonymous.
+- Nothing is fetched until you open the drawer.
 
 ## What is stored locally
 
-- A copy of YouTube's public client configuration object
-  (`INNERTUBE_CONTEXT`: client name, version, locale, country code) is
-  cached in `chrome.storage.session` for up to 6 hours. This avoids
-  re-fetching the same configuration on every API call. The cache is
-  cleared automatically when the browser closes.
+- The height you dragged the drawer to, in `chrome.storage.local`, so it
+  opens at the same size next time.
 - Nothing else.
 
 ## What is sent off-device
 
-- Only requests to `www.youtube.com` (the data source for comments).
-  Nothing is ever sent to any other server. The extension has no
-  backend, no analytics provider, no remote configuration, no
+- Only requests to `music.youtube.com` / `www.youtube.com` (the data source
+  for comments). Nothing is ever sent to any other server. The extension
+  has no backend, no analytics provider, no remote configuration, no
   telemetry.
 
 ## What is read but not collected
 
-- The current video ID, taken from the URL of the YouTube Music
-  page you are already on. It is included in the request to
-  `www.youtube.com` so the matching comments can be returned. The
-  extension does not log it, does not store it, does not send it
-  anywhere other than to youtube.com.
+- The current video ID, taken from the page you are already on (the URL,
+  or the player when you browse elsewhere while music plays), and the page
+  language, so comment dates come back in your language. Both are included
+  in the request to YouTube and nowhere else. The extension does not log
+  or store them.
 
 ## Third parties
 
@@ -42,10 +41,8 @@ This extension does not collect, store, or transmit any user data.
 
 ## Cookies
 
-The extension does not set or read any cookies itself. Your browser
-sends the cookies it already holds for the `youtube.com` domain when
-the extension's content script issues a request to that domain — the
-same way it would if you opened a YouTube tab manually.
+The extension does not set or read any cookies, and its requests to
+YouTube explicitly omit them.
 
 ## Contact
 

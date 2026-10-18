@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Đọc bình luận YouTube của bài hát đang phát ngay trên thanh trình phát YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Bình luận"
+  },
+  "drawerTitle": {
+    "message": "Bình luận"
+  },
+  "close": {
+    "message": "Đóng"
+  },
+  "resizeHint": {
+    "message": "Kéo để đổi kích thước"
+  },
+  "sortLabel": {
+    "message": "Sắp xếp bình luận"
+  },
+  "sortTop": {
+    "message": "Hàng đầu"
+  },
+  "sortNewest": {
+    "message": "Mới nhất"
+  },
+  "stateIdle": {
+    "message": "Phát một bài hát để xem bình luận."
+  },
+  "stateDisabled": {
+    "message": "Bình luận đã bị tắt hoặc không có cho bài hát này."
+  },
+  "stateError": {
+    "message": "Không tải được bình luận."
+  },
+  "retry": {
+    "message": "Thử lại"
+  },
+  "loading": {
+    "message": "Đang tải…"
+  },
+  "loadingMore": {
+    "message": "Đang tải thêm…"
+  },
+  "loadMoreError": {
+    "message": "Không tải thêm được bình luận."
+  },
+  "noMore": {
+    "message": "Không còn bình luận nào."
+  },
+  "loadingReplies": {
+    "message": "Đang tải phản hồi…"
+  },
+  "repliesError": {
+    "message": "Không tải được phản hồi."
+  },
+  "moreReplies": {
+    "message": "Hiện thêm phản hồi"
+  },
+  "hideReplies": {
+    "message": "Ẩn phản hồi"
+  },
+  "replies_one": {
+    "message": "$COUNT$ phản hồi",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ phản hồi",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Đọc thêm"
+  },
+  "showLess": {
+    "message": "Ẩn bớt"
+  },
+  "likes": {
+    "message": "Lượt thích"
+  },
+  "heartedByCreator": {
+    "message": "Được nhà sáng tạo thả tim"
+  },
+  "verified": {
+    "message": "Đã xác minh"
+  },
+  "officialArtist": {
+    "message": "Kênh nghệ sĩ chính thức"
+  },
+  "seekTo": {
+    "message": "Chuyển đến $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

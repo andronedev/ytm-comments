@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "재생 중인 곡의 YouTube 댓글을 YouTube Music 플레이어 바에서 바로 읽어보세요."
+  },
+  "commentsButton": {
+    "message": "댓글"
+  },
+  "drawerTitle": {
+    "message": "댓글"
+  },
+  "close": {
+    "message": "닫기"
+  },
+  "resizeHint": {
+    "message": "드래그하여 크기 조절"
+  },
+  "sortLabel": {
+    "message": "댓글 정렬"
+  },
+  "sortTop": {
+    "message": "인기 댓글순"
+  },
+  "sortNewest": {
+    "message": "최신순"
+  },
+  "stateIdle": {
+    "message": "곡을 재생하면 댓글이 표시됩니다."
+  },
+  "stateDisabled": {
+    "message": "이 곡의 댓글이 사용 중지되었거나 제공되지 않습니다."
+  },
+  "stateError": {
+    "message": "댓글을 불러올 수 없습니다."
+  },
+  "retry": {
+    "message": "다시 시도"
+  },
+  "loading": {
+    "message": "로드 중…"
+  },
+  "loadingMore": {
+    "message": "더 불러오는 중…"
+  },
+  "loadMoreError": {
+    "message": "댓글을 더 불러올 수 없습니다."
+  },
+  "noMore": {
+    "message": "더 이상 댓글이 없습니다."
+  },
+  "loadingReplies": {
+    "message": "답글 로드 중…"
+  },
+  "repliesError": {
+    "message": "답글을 불러올 수 없습니다."
+  },
+  "moreReplies": {
+    "message": "답글 더보기"
+  },
+  "hideReplies": {
+    "message": "답글 숨기기"
+  },
+  "replies_one": {
+    "message": "답글 $COUNT$개",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "답글 $COUNT$개",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "자세히 보기"
+  },
+  "showLess": {
+    "message": "간략히"
+  },
+  "likes": {
+    "message": "좋아요"
+  },
+  "heartedByCreator": {
+    "message": "크리에이터가 하트를 표시함"
+  },
+  "verified": {
+    "message": "인증됨"
+  },
+  "officialArtist": {
+    "message": "공식 아티스트 채널"
+  },
+  "seekTo": {
+    "message": "$COUNT$(으)로 이동",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Lees de YouTube-reacties op het nummer dat speelt, rechtstreeks vanuit de spelerbalk van YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Reacties"
+  },
+  "drawerTitle": {
+    "message": "Reacties"
+  },
+  "close": {
+    "message": "Sluiten"
+  },
+  "resizeHint": {
+    "message": "Sleep om de grootte te wijzigen"
+  },
+  "sortLabel": {
+    "message": "Reacties sorteren"
+  },
+  "sortTop": {
+    "message": "Populairste"
+  },
+  "sortNewest": {
+    "message": "Nieuwste"
+  },
+  "stateIdle": {
+    "message": "Speel een nummer af om de reacties te zien."
+  },
+  "stateDisabled": {
+    "message": "Reacties zijn uitgeschakeld of niet beschikbaar voor dit nummer."
+  },
+  "stateError": {
+    "message": "Kan reacties niet laden."
+  },
+  "retry": {
+    "message": "Opnieuw proberen"
+  },
+  "loading": {
+    "message": "Laden…"
+  },
+  "loadingMore": {
+    "message": "Meer laden…"
+  },
+  "loadMoreError": {
+    "message": "Kan geen reacties meer laden."
+  },
+  "noMore": {
+    "message": "Geen reacties meer."
+  },
+  "loadingReplies": {
+    "message": "Antwoorden laden…"
+  },
+  "repliesError": {
+    "message": "Kan antwoorden niet laden."
+  },
+  "moreReplies": {
+    "message": "Meer antwoorden tonen"
+  },
+  "hideReplies": {
+    "message": "Antwoorden verbergen"
+  },
+  "replies_one": {
+    "message": "$COUNT$ antwoord",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ antwoorden",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Meer lezen"
+  },
+  "showLess": {
+    "message": "Minder tonen"
+  },
+  "likes": {
+    "message": "Vind-ik-leuks"
+  },
+  "heartedByCreator": {
+    "message": "Hartje van de maker"
+  },
+  "verified": {
+    "message": "Geverifieerd"
+  },
+  "officialArtist": {
+    "message": "Officieel artiestenkanaal"
+  },
+  "seekTo": {
+    "message": "Ga naar $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

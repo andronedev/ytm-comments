@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Lies die YouTube-Kommentare zum laufenden Titel direkt in der Player-Leiste von YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Kommentare"
+  },
+  "drawerTitle": {
+    "message": "Kommentare"
+  },
+  "close": {
+    "message": "Schließen"
+  },
+  "resizeHint": {
+    "message": "Ziehen, um die Größe zu ändern"
+  },
+  "sortLabel": {
+    "message": "Kommentare sortieren"
+  },
+  "sortTop": {
+    "message": "Top"
+  },
+  "sortNewest": {
+    "message": "Neueste"
+  },
+  "stateIdle": {
+    "message": "Spiel einen Titel ab, um seine Kommentare zu sehen."
+  },
+  "stateDisabled": {
+    "message": "Kommentare sind für diesen Titel deaktiviert oder nicht verfügbar."
+  },
+  "stateError": {
+    "message": "Kommentare konnten nicht geladen werden."
+  },
+  "retry": {
+    "message": "Erneut versuchen"
+  },
+  "loading": {
+    "message": "Wird geladen…"
+  },
+  "loadingMore": {
+    "message": "Weitere werden geladen…"
+  },
+  "loadMoreError": {
+    "message": "Weitere Kommentare konnten nicht geladen werden."
+  },
+  "noMore": {
+    "message": "Keine weiteren Kommentare."
+  },
+  "loadingReplies": {
+    "message": "Antworten werden geladen…"
+  },
+  "repliesError": {
+    "message": "Antworten konnten nicht geladen werden."
+  },
+  "moreReplies": {
+    "message": "Weitere Antworten anzeigen"
+  },
+  "hideReplies": {
+    "message": "Antworten ausblenden"
+  },
+  "replies_one": {
+    "message": "$COUNT$ Antwort",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ Antworten",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Mehr anzeigen"
+  },
+  "showLess": {
+    "message": "Weniger anzeigen"
+  },
+  "likes": {
+    "message": "Mag ich"
+  },
+  "heartedByCreator": {
+    "message": "Vom Creator mit Herz markiert"
+  },
+  "verified": {
+    "message": "Bestätigt"
+  },
+  "officialArtist": {
+    "message": "Offizieller Künstlerkanal"
+  },
+  "seekTo": {
+    "message": "Zu $COUNT$ springen",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

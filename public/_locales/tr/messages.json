@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Çalan parçanın YouTube yorumlarını doğrudan YouTube Music oynatıcı çubuğundan okuyun."
+  },
+  "commentsButton": {
+    "message": "Yorumlar"
+  },
+  "drawerTitle": {
+    "message": "Yorumlar"
+  },
+  "close": {
+    "message": "Kapat"
+  },
+  "resizeHint": {
+    "message": "Yeniden boyutlandırmak için sürükleyin"
+  },
+  "sortLabel": {
+    "message": "Yorumları sırala"
+  },
+  "sortTop": {
+    "message": "Popüler"
+  },
+  "sortNewest": {
+    "message": "En yeni"
+  },
+  "stateIdle": {
+    "message": "Yorumlarını görmek için bir parça çalın."
+  },
+  "stateDisabled": {
+    "message": "Bu parça için yorumlar kapalı veya kullanılamıyor."
+  },
+  "stateError": {
+    "message": "Yorumlar yüklenemedi."
+  },
+  "retry": {
+    "message": "Tekrar dene"
+  },
+  "loading": {
+    "message": "Yükleniyor…"
+  },
+  "loadingMore": {
+    "message": "Daha fazla yükleniyor…"
+  },
+  "loadMoreError": {
+    "message": "Daha fazla yorum yüklenemedi."
+  },
+  "noMore": {
+    "message": "Başka yorum yok."
+  },
+  "loadingReplies": {
+    "message": "Yanıtlar yükleniyor…"
+  },
+  "repliesError": {
+    "message": "Yanıtlar yüklenemedi."
+  },
+  "moreReplies": {
+    "message": "Daha fazla yanıt göster"
+  },
+  "hideReplies": {
+    "message": "Yanıtları gizle"
+  },
+  "replies_one": {
+    "message": "$COUNT$ yanıt",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ yanıt",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Devamını oku"
+  },
+  "showLess": {
+    "message": "Daha az göster"
+  },
+  "likes": {
+    "message": "Beğeniler"
+  },
+  "heartedByCreator": {
+    "message": "İçerik üreticisi kalp verdi"
+  },
+  "verified": {
+    "message": "Doğrulanmış"
+  },
+  "officialArtist": {
+    "message": "Resmi sanatçı kanalı"
+  },
+  "seekTo": {
+    "message": "$COUNT$ konumuna git",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

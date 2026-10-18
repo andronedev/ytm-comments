@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Czytaj komentarze z YouTube do odtwarzanego utworu bezpośrednio z paska odtwarzacza YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Komentarze"
+  },
+  "drawerTitle": {
+    "message": "Komentarze"
+  },
+  "close": {
+    "message": "Zamknij"
+  },
+  "resizeHint": {
+    "message": "Przeciągnij, aby zmienić rozmiar"
+  },
+  "sortLabel": {
+    "message": "Sortuj komentarze"
+  },
+  "sortTop": {
+    "message": "Najpopularniejsze"
+  },
+  "sortNewest": {
+    "message": "Najnowsze"
+  },
+  "stateIdle": {
+    "message": "Odtwórz utwór, aby zobaczyć komentarze."
+  },
+  "stateDisabled": {
+    "message": "Komentarze są wyłączone lub niedostępne dla tego utworu."
+  },
+  "stateError": {
+    "message": "Nie udało się wczytać komentarzy."
+  },
+  "retry": {
+    "message": "Spróbuj ponownie"
+  },
+  "loading": {
+    "message": "Wczytywanie…"
+  },
+  "loadingMore": {
+    "message": "Wczytywanie kolejnych…"
+  },
+  "loadMoreError": {
+    "message": "Nie udało się wczytać kolejnych komentarzy."
+  },
+  "noMore": {
+    "message": "Brak kolejnych komentarzy."
+  },
+  "loadingReplies": {
+    "message": "Wczytywanie odpowiedzi…"
+  },
+  "repliesError": {
+    "message": "Nie udało się wczytać odpowiedzi."
+  },
+  "moreReplies": {
+    "message": "Pokaż więcej odpowiedzi"
+  },
+  "hideReplies": {
+    "message": "Ukryj odpowiedzi"
+  },
+  "replies_one": {
+    "message": "Odpowiedzi: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "Odpowiedzi: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Czytaj więcej"
+  },
+  "showLess": {
+    "message": "Pokaż mniej"
+  },
+  "likes": {
+    "message": "Polubienia"
+  },
+  "heartedByCreator": {
+    "message": "Serce od twórcy"
+  },
+  "verified": {
+    "message": "Zweryfikowany"
+  },
+  "officialArtist": {
+    "message": "Oficjalny kanał artysty"
+  },
+  "seekTo": {
+    "message": "Przejdź do $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

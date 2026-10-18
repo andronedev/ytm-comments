@@ -1,28 +1,28 @@
 <script setup lang="ts">
 import type { SortKey } from '@/lib/types';
+import { t } from '@/lib/i18n';
 
 defineProps<{ sort: SortKey; disabled?: boolean }>();
 const emit = defineEmits<{ change: [SortKey] }>();
+
+const options: { key: SortKey; label: () => string }[] = [
+  { key: 'top', label: () => t('sortTop') },
+  { key: 'newest', label: () => t('sortNewest') },
+];
 </script>
 
 <template>
-  <div class="sort-menu" role="tablist">
+  <div class="sort-menu" role="radiogroup" :aria-label="t('sortLabel')">
     <button
+      v-for="o in options"
+      :key="o.key"
       type="button"
-      role="tab"
-      :aria-selected="sort === 'top'"
-      :class="{ active: sort === 'top' }"
+      role="radio"
+      :aria-checked="sort === o.key"
+      :class="{ active: sort === o.key }"
       :disabled="disabled"
-      @click="emit('change', 'top')"
-    >Top</button>
-    <button
-      type="button"
-      role="tab"
-      :aria-selected="sort === 'newest'"
-      :class="{ active: sort === 'newest' }"
-      :disabled="disabled"
-      @click="emit('change', 'newest')"
-    >Newest</button>
+      @click="emit('change', o.key)"
+    >{{ o.label() }}</button>
   </div>
 </template>
 
@@ -30,15 +30,15 @@ const emit = defineEmits<{ change: [SortKey] }>();
 .sort-menu {
   display: inline-flex;
   gap: 4px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 999px;
-  padding: 4px;
+  padding: 3px;
 }
 .sort-menu button {
   appearance: none;
   border: 0;
   background: transparent;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.75);
   font: inherit;
   padding: 6px 14px;
   border-radius: 999px;
@@ -47,14 +47,15 @@ const emit = defineEmits<{ change: [SortKey] }>();
   font-weight: 500;
   transition: background 120ms, color 120ms;
 }
-.sort-menu button:hover:not(:disabled) {
+.sort-menu button:hover:not(:disabled):not(.active) {
   color: #fff;
   background: rgba(255, 255, 255, 0.08);
 }
 .sort-menu button.active {
   background: #fff;
-  color: #000;
+  color: #0f0f0f;
 }
+.sort-menu button:focus-visible { outline: 2px solid #62b5ff; outline-offset: 1px; }
 .sort-menu button:disabled {
   opacity: 0.4;
   cursor: not-allowed;

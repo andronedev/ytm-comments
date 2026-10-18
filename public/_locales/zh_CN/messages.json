@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "直接在 YouTube Music 播放栏中查看正在播放曲目的 YouTube 评论。"
+  },
+  "commentsButton": {
+    "message": "评论"
+  },
+  "drawerTitle": {
+    "message": "评论"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "resizeHint": {
+    "message": "拖动以调整大小"
+  },
+  "sortLabel": {
+    "message": "评论排序"
+  },
+  "sortTop": {
+    "message": "热门"
+  },
+  "sortNewest": {
+    "message": "最新"
+  },
+  "stateIdle": {
+    "message": "播放一首曲目即可查看其评论。"
+  },
+  "stateDisabled": {
+    "message": "此曲目的评论已关闭或不可用。"
+  },
+  "stateError": {
+    "message": "无法加载评论。"
+  },
+  "retry": {
+    "message": "重试"
+  },
+  "loading": {
+    "message": "正在加载…"
+  },
+  "loadingMore": {
+    "message": "正在加载更多…"
+  },
+  "loadMoreError": {
+    "message": "无法加载更多评论。"
+  },
+  "noMore": {
+    "message": "没有更多评论了。"
+  },
+  "loadingReplies": {
+    "message": "正在加载回复…"
+  },
+  "repliesError": {
+    "message": "无法加载回复。"
+  },
+  "moreReplies": {
+    "message": "显示更多回复"
+  },
+  "hideReplies": {
+    "message": "隐藏回复"
+  },
+  "replies_one": {
+    "message": "$COUNT$ 条回复",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ 条回复",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "展开"
+  },
+  "showLess": {
+    "message": "收起"
+  },
+  "likes": {
+    "message": "顶"
+  },
+  "heartedByCreator": {
+    "message": "创作者已点亮爱心"
+  },
+  "verified": {
+    "message": "已验证"
+  },
+  "officialArtist": {
+    "message": "官方艺人频道"
+  },
+  "seekTo": {
+    "message": "跳转到 $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "Leia os comentários do YouTube da música que está tocando, direto na barra do player do YouTube Music."
+  },
+  "commentsButton": {
+    "message": "Comentários"
+  },
+  "drawerTitle": {
+    "message": "Comentários"
+  },
+  "close": {
+    "message": "Fechar"
+  },
+  "resizeHint": {
+    "message": "Arraste para redimensionar"
+  },
+  "sortLabel": {
+    "message": "Classificar comentários"
+  },
+  "sortTop": {
+    "message": "Principais"
+  },
+  "sortNewest": {
+    "message": "Mais recentes"
+  },
+  "stateIdle": {
+    "message": "Toque uma música para ver os comentários."
+  },
+  "stateDisabled": {
+    "message": "Os comentários estão desativados ou indisponíveis para esta música."
+  },
+  "stateError": {
+    "message": "Não foi possível carregar os comentários."
+  },
+  "retry": {
+    "message": "Tentar novamente"
+  },
+  "loading": {
+    "message": "Carregando…"
+  },
+  "loadingMore": {
+    "message": "Carregando mais…"
+  },
+  "loadMoreError": {
+    "message": "Não foi possível carregar mais comentários."
+  },
+  "noMore": {
+    "message": "Não há mais comentários."
+  },
+  "loadingReplies": {
+    "message": "Carregando respostas…"
+  },
+  "repliesError": {
+    "message": "Não foi possível carregar as respostas."
+  },
+  "moreReplies": {
+    "message": "Mostrar mais respostas"
+  },
+  "hideReplies": {
+    "message": "Ocultar respostas"
+  },
+  "replies_one": {
+    "message": "$COUNT$ resposta",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ respostas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "Ler mais"
+  },
+  "showLess": {
+    "message": "Mostrar menos"
+  },
+  "likes": {
+    "message": "Curtidas"
+  },
+  "heartedByCreator": {
+    "message": "Coração do criador"
+  },
+  "verified": {
+    "message": "Verificado"
+  },
+  "officialArtist": {
+    "message": "Canal oficial do artista"
+  },
+  "seekTo": {
+    "message": "Ir para $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}

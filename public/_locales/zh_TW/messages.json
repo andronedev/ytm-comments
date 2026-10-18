@@ -1,0 +1,110 @@
+{
+  "extName": {
+    "message": "YT Music Comments"
+  },
+  "extDescription": {
+    "message": "直接在 YouTube Music 播放列中查看正在播放曲目的 YouTube 留言。"
+  },
+  "commentsButton": {
+    "message": "留言"
+  },
+  "drawerTitle": {
+    "message": "留言"
+  },
+  "close": {
+    "message": "關閉"
+  },
+  "resizeHint": {
+    "message": "拖曳以調整大小"
+  },
+  "sortLabel": {
+    "message": "留言排序"
+  },
+  "sortTop": {
+    "message": "熱門"
+  },
+  "sortNewest": {
+    "message": "最新"
+  },
+  "stateIdle": {
+    "message": "播放曲目即可查看留言。"
+  },
+  "stateDisabled": {
+    "message": "這首曲目的留言功能已關閉或無法使用。"
+  },
+  "stateError": {
+    "message": "無法載入留言。"
+  },
+  "retry": {
+    "message": "重試"
+  },
+  "loading": {
+    "message": "載入中…"
+  },
+  "loadingMore": {
+    "message": "正在載入更多…"
+  },
+  "loadMoreError": {
+    "message": "無法載入更多留言。"
+  },
+  "noMore": {
+    "message": "沒有更多留言了。"
+  },
+  "loadingReplies": {
+    "message": "正在載入回覆…"
+  },
+  "repliesError": {
+    "message": "無法載入回覆。"
+  },
+  "moreReplies": {
+    "message": "顯示更多回覆"
+  },
+  "hideReplies": {
+    "message": "隱藏回覆"
+  },
+  "replies_one": {
+    "message": "$COUNT$ 則回覆",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "replies_other": {
+    "message": "$COUNT$ 則回覆",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "readMore": {
+    "message": "顯示完整內容"
+  },
+  "showLess": {
+    "message": "顯示較少"
+  },
+  "likes": {
+    "message": "喜歡"
+  },
+  "heartedByCreator": {
+    "message": "創作者已加上愛心"
+  },
+  "verified": {
+    "message": "已驗證"
+  },
+  "officialArtist": {
+    "message": "官方藝人頻道"
+  },
+  "seekTo": {
+    "message": "跳至 $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  }
+}
