@@ -22,6 +22,8 @@ interface Layout {
   findAnchor(): HTMLElement | null;
   buttonClasses: string;
   feedbackClasses: string;
+  /** Icon size in px, matching the native buttons next to ours. */
+  iconSize: number;
 }
 
 const LAYOUTS: Layout[] = [
@@ -37,6 +39,7 @@ const LAYOUTS: Layout[] = [
     buttonClasses:
       'ytSpecButtonShapeNextHost ytSpecButtonShapeNextTonal ytSpecButtonShapeNextOverlay ytSpecButtonShapeNextSizeS ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment',
     feedbackClasses: 'ytSpecTouchFeedbackShapeHost ytSpecTouchFeedbackShapeOverlayTouchResponse',
+    iconSize: 16,
   },
   {
     name: 'legacy',
@@ -47,6 +50,7 @@ const LAYOUTS: Layout[] = [
     buttonClasses:
       'ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment',
     feedbackClasses: 'ytSpecTouchFeedbackShapeHost ytSpecTouchFeedbackShapeTouchResponse',
+    iconSize: 24,
   },
 ];
 
@@ -98,7 +102,7 @@ function createButton(layout: Layout, onClick: () => void): HTMLElement {
   host.innerHTML = `
     <button class="${layout.buttonClasses}" type="button" aria-pressed="false">
       <div aria-hidden="true" class="ytSpecButtonShapeNextIcon">
-        <span class="ytIconWrapperHost" style="width: 24px; height: 24px;">
+        <span class="ytIconWrapperHost" style="width: ${layout.iconSize}px; height: ${layout.iconSize}px;">
           <span class="yt-icon-shape ytSpecIconShapeHost">
             <div style="width: 100%; height: 100%; display: block; fill: currentcolor;">${ICON_SVG}</div>
           </span>
